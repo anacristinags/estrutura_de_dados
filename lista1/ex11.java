@@ -21,7 +21,7 @@ public class ex11 {
                 matriz[i][j] = numero;
             }
         }
-
+    /*  jeito simples
         soma = (matriz[0][0]*matriz[1][1]*matriz[2][2])+
                 (matriz[0][1]*matriz[1][2]*matriz[2][0])+
                 (matriz[0][2]*matriz[1][0]*matriz[2][1]);
@@ -29,7 +29,13 @@ public class ex11 {
         sub = (matriz[0][1]*matriz[1][0]*matriz[2][2])+
                 (matriz[0][0]*matriz[1][2]*matriz[2][1])+
                 (matriz[0][2]*matriz[1][1]*matriz[2][0]);
+    */
 
+        for (int i = 0; i < 3; i++) {
+            soma += matriz[0][i] * matriz[1][(i+1)%3] * matriz[2][(i+2)%3];
+            sub += matriz[0][i] * matriz[1][(i+2)%3] * matriz[2][(i+1)%3];
+        }
+        
         result = soma - sub;
 
         System.out.println("Matriz:");
