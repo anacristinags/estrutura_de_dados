@@ -6,3 +6,4 @@ Atividades e Exercícios de Estrutura de Dados
 * Lista4 -> Exercícios utilizando Listas Duplamente Encadeadas
 * Lista5 -> Exercícios sobre matriz (Lista Extra)
 * Lista6 -> Exercícios utilizando Pilha. (Implementação em vetor e em referências)
+* Lista7 -> Exercícios utilizando Fila.
